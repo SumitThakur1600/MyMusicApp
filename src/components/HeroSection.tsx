@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
-import { MovingBorder as Button } from "./ui/moving-border";
 function HeroSection() {
   return (
     <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
@@ -15,17 +14,14 @@ function HeroSection() {
         </h1>
         <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
           Dive into our comprehensive music courses and transform your musical
-          journey today. Whether you're a beginner or looking to refine your
+          journey today. Whether you are a beginner or looking to refine your
           skills, join us to unlock your true potential.
         </p>
-        <div className="mt-4">
+        <div className="mt-8">
           <Link href={"/courses"}>
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
-            >
-              Explore courses
-            </Button>
+            <button className="px-4 py-2 rounded-lg border bg-white text-black dark:bg-black dark:text-white border-neutral-200 dark:border-slate-800 shadow-sm hover:bg-neutral-100 dark:hover:bg-neutral-900 transition">
+              Explore Courses
+            </button>
           </Link>
         </div>
       </div>

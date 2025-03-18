@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { HoverEffect } from "./ui/card-hover-effect";
-import { MovingBorder as Button } from "./ui/moving-border";
 function UpcomingWebinars() {
   const featuredWebinars = [
     {
@@ -74,12 +73,9 @@ function UpcomingWebinars() {
 
         <div className="mt-4 flex justify-center w-full">
           <Link href={"/"}>
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 "
-            >
+            <button className="px-4 py-2 rounded-lg border bg-white text-black dark:bg-black dark:text-white border-neutral-200 dark:border-slate-800 shadow-sm hover:bg-neutral-100 dark:hover:bg-neutral-900 transition">
               Explore Webinars
-            </Button>
+            </button>
           </Link>
         </div>
       </div>
