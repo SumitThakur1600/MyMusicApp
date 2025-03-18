@@ -1,5 +1,57 @@
 @import "tailwindcss";
 
+
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1.7);
+  }
+}
+
+
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-thumb {
+  background:white; /* Cyan to Emerald */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* Dark gray background */
+}
+
+/* Apply only to StickyScroll container */
+.scroll-container::-webkit-scrollbar {
+  width: 14px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ec4899, #6366f1); /* Pink to Indigo */
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
