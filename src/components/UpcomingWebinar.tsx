@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { HoverEffect } from "./ui/card-hover-effect";
-import { Button } from "./ui/moving-border";
+import { MovingBorder as Button } from "./ui/moving-border";
 function UpcomingWebinars() {
   const featuredWebinars = [
     {
